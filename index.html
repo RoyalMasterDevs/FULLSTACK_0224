@@ -1,26 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>Criptomonedas</li>
+    <header><!--encabezado-->
+        <nav><!--Navegacion-->
+            <ul><!--Lista Desordenada Unordened List-->
+                <li>Criptomonedas</li> <!--Enlaces Links-->
+                <li>Repductor</li>
+                <li><a href="./reproductor/reproductor.html">Reproductor</a></li>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="#footer">Pie de pagina</a></li>
+                <li><a href="../SIKA-01.pdf" download>Descargar PDF</a></li>
+                <li><a href="mailto:jbarrera@motiontech.com.mx">Enviar Correo</a></li>
+                <li><a href="tel:+5212345678">Llamar Al telefono</a></li>
+                <li><a href="https://wa.me/528115028945">Whatsapp</a></li>
+
+
+            </ul>
+            <ol><!--Lista Ordenada Ordened List-->
+                <li>Criptomonedas</li> <!--Enlaces Links-->
                 <li>Repductor</li>
                 <li>Buscador de Autos</li>
-                <li></li>
-            </ul>
+            </ol>
         </nav>
     </header>
-    <h1>Esto es un titulo</h1>
+    <main> <!--Contenido Principal-->
+        <!--Solo puede haber un H1 en la pagina-->
+        <!--Debe llegar un orden descendiente-->
+        <!--Puedes repetir las demas, solo debe haber un h1-->
+        <div><!--Elemento Bloque-->
+            <h1>Esto es un titulo h1</h1><!--header 1-->
+            <h2>Esto es un titulo h2</h2>
+            <h3>Esto es un titulo h3</h3>
+            <h4>Esto es un titulo h4</h4>
+            <h5>esto es un titulo h5</h5>
+            <h6>Esto es un titulo h6</h6>
+        </div>
+        <section id="principal"><!--Elemntos bloques mas selectivos-->
 
-    <p>Esto es un parrafo
+        </section>
 
-    </p>
+        <img src="./img/1.jpg" alt="Imagen De Prueba" height="200" width="300">
+        <img src="https://images.unsplash.com/photo-1573564638412-ad9bc5fa19f0?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Perrito">
+
+        <video width="200" height="150" controls autoplay muted loop>
+            <source src="" type="video/mp4">
+            <source src="" type="video/ogg">
+            El video No esta soportado
+        </video>
+
+        <audio controls>
+            <source src="sound.ogg" type="audio/ogg">
+            <source src="sound.mp3" type="audio/mp3">
+            El audio no se puede reproducir
+        </audio>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat veniam error molestiae quia aliquam
+            <span>Esto esta en SPAN</span>
+            laudantium quis, unde neque dolore blanditiis earum quae explicabo aspernatur impedit fuga rerum deserunt!
+            Ea, necessitatibus?
+        </p>
+        <br><!--Saltos De pagina-->
+        <br>
+        <br>
+        <hr> <!--Linea horizontal-->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit earum officiis distinctio natus veniam
+            corporis ea qui? Commodi culpa, nemo molestiae repellat aspernatur vero sapiente officiis incidunt,
+            exercitationem ratione atque.</p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7191.165435883994!2d-100.28664400466!3d25.685123828340675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629561ff265483%3A0x1b7bd40783c3a9a8!2sParque%20Fundidora!5e0!3m2!1ses-419!2smx!4v1723779126104!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Uso de Tablas en HTML</h3>
+        <table>
+            <caption>Telefonos</caption>
+            <thead>
+
+                <tr><!--table row, Fila de Tabla-->
+                    <th><!--table head, encabezado de tabla-->
+                        Nombre
+                    </th>
+                    <th>
+                        Telefono
+                    </th>
+                </tr>
+            </thead>
+            <tbody><!--Cuerpo de la tabla-->
+                <tr>
+                    <td>Jorge</td><!--table data, datos de tabla-->
+                    <td>81150289</td>
+                </tr>
+                <tr>
+                    <td>Mariana</td>
+                    <td>81234455</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Personal</td>
+                    <td>Oficina</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <aside>Esto es un aside</aside>
+        <blockquote>Esto es un quote</blockquote>
+    </main>
+    <footer id="footer"><!--Pie de pagina-->
+        <!-- <div class="cuadrado" style="background-color: red;width: 300px; height: 400px;"></div> -->
+
+        <form action="/action.php" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+
+            <label for="phone">Telefono</label>
+            <input type="number" name="phone" id="phone">
+
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email">
+
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+
+            <label for="opcion">Opcion</label>
+            <input type="radio">
+
+            <label for="rango">Selecciona</label>
+            <input type="range">
+
+            <select name="select" id="select">
+                <option value="valor1">Valor1</option>
+                <option value="valor2">Valor2</option>
+                <option value="valor3">Valor3</option>
+            </select>
+        </form>
+    </footer>
 </body>
+
 </html>
