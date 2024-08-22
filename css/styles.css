@@ -1,6 +1,102 @@
-body{
-    background-color: blue;
+/* PALETA DE COLORES */
+:root{
+    --ColorFondoGlobal: #d24f51;
+    --ColorLetras: #761c1c00;
+    --ColorLetrasRGB: rgb(194, 158, 158);
+    --ColorConTransparencias: rgba(157, 28, 28, 0.2);
 }
-h1{
+
+
+/* Propiedades de CSS */
+/* CASCADA */
+p {
+    color: var(--ColorLetras);
+
+}
+
+p {
+    color: green;
+}
+
+/* HERENCIA */
+div {
+    background-color: var(--ColorConTransparencias);
     color: white;
 }
+
+/* ESPECIFICIDAD */
+div>h1 {
+    background-color: aqua;
+    color: green;
+}
+
+/* !important */
+div>h1 {
+    background-color: red !important;
+}
+
+header {
+    margin: 20px 20px 20px 20px;
+    border: 20px solid black;
+    padding: 20px 20px 20px 20px;
+}
+
+ul {
+    /* FLEXBOX se usa desde el elemento padre hacia los elementos hijo */
+    /* FLEXBOX APLICA POR DEFAULT EL ORDEN HORIZONTAL */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+main p {
+    background-color: #0000ff;
+    color: black;
+    font-size: 10px;
+    border-radius: 7px;
+    width: 90%;
+    border: solid 2px black;
+}
+
+img {
+    width: 100%;
+}
+
+#principal {
+    margin: 0 2 0 0;
+    width: 95%;
+}
+
+.contenido {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido2 {
+    padding: 10px;
+}
+
+/* PROYECTO DE REPRODUCTOR */
+
+/* WEB RESPONSIVE, responsivos */
+/* MEDIA QUERIES */
+@media (min-width: 1200px) {
+    img {
+        width: 50%;
+    }
+}
+@media (max-width: 960px) {
+    ul{
+        flex-direction: column;
+    }
+     
+}
+/*  */
+/* ██████  ██       ██████  ██████   █████  ██      ███████ ███████  */
+/* ██       ██      ██    ██ ██   ██ ██   ██ ██      ██      ██       */
+/* ██   ███ ██      ██    ██ ██████  ███████ ██      █████   ███████  */
+/* ██    ██ ██      ██    ██ ██   ██ ██   ██ ██      ██           ██  */
+ /* ██████  ███████  ██████  ██████  ██   ██ ███████ ███████ ███████  */
+                                                                  /*  */
