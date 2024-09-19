@@ -1,0 +1,523 @@
+:root {
+  --primary: steelblue;
+}
+
+.nav {
+  background-color: red;
+}
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+.nav__item {
+  color: white;
+  text-decoration: none;
+}
+.nav__item--active {
+  text-decoration: underline;
+}
+.nav__item:hover {
+  color: black;
+}
+@media (min-width: 764px) {
+  .nav__container {
+    justify-content: flex-end;
+  }
+}
+
+.hero__container {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4274509804), rgba(0, 0, 0, 0.7254901961)), url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero__texts {
+  color: white;
+}
+.hero__title {
+  font-size: 3rem;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.selector-1 {
+  color: black;
+}
+
+.selector-2 {
+  color: black;
+}
+
+.selector-3 {
+  color: black;
+}
+
+.selector-4 {
+  color: black;
+}
+
+.selector-5 {
+  color: black;
+}
+
+.selector-6 {
+  color: black;
+}
+
+.selector-7 {
+  color: black;
+}
+
+.selector-8 {
+  color: black;
+}
+
+.selector-9 {
+  color: black;
+}
+
+.selector-10 {
+  color: black;
+}
+
+.selector-11 {
+  color: black;
+}
+
+.selector-12 {
+  color: black;
+}
+
+.selector-13 {
+  color: black;
+}
+
+.selector-14 {
+  color: black;
+}
+
+.selector-15 {
+  color: black;
+}
+
+.selector-16 {
+  color: black;
+}
+
+.selector-17 {
+  color: black;
+}
+
+.selector-18 {
+  color: black;
+}
+
+.selector-19 {
+  color: black;
+}
+
+.selector-20 {
+  color: black;
+}
+
+.selector-21 {
+  color: black;
+}
+
+.selector-22 {
+  color: black;
+}
+
+.selector-23 {
+  color: black;
+}
+
+.selector-24 {
+  color: black;
+}
+
+.selector-25 {
+  color: black;
+}
+
+.selector-26 {
+  color: black;
+}
+
+.selector-27 {
+  color: black;
+}
+
+.selector-28 {
+  color: black;
+}
+
+.selector-29 {
+  color: black;
+}
+
+.selector-30 {
+  color: black;
+}
+
+.selector-31 {
+  color: black;
+}
+
+.selector-32 {
+  color: black;
+}
+
+.selector-33 {
+  color: black;
+}
+
+.selector-34 {
+  color: black;
+}
+
+.selector-35 {
+  color: black;
+}
+
+.selector-36 {
+  color: black;
+}
+
+.selector-37 {
+  color: black;
+}
+
+.selector-38 {
+  color: black;
+}
+
+.selector-39 {
+  color: black;
+}
+
+.selector-40 {
+  color: black;
+}
+
+.selector-41 {
+  color: black;
+}
+
+.selector-42 {
+  color: black;
+}
+
+.selector-43 {
+  color: black;
+}
+
+.selector-44 {
+  color: black;
+}
+
+.selector-45 {
+  color: black;
+}
+
+.selector-46 {
+  color: black;
+}
+
+.selector-47 {
+  color: black;
+}
+
+.selector-48 {
+  color: black;
+}
+
+.selector-49 {
+  color: black;
+}
+
+.selector-50 {
+  color: black;
+}
+
+.selector-51 {
+  color: black;
+}
+
+.selector-52 {
+  color: black;
+}
+
+.selector-53 {
+  color: black;
+}
+
+.selector-54 {
+  color: black;
+}
+
+.selector-55 {
+  color: black;
+}
+
+.selector-56 {
+  color: black;
+}
+
+.selector-57 {
+  color: black;
+}
+
+.selector-58 {
+  color: black;
+}
+
+.selector-59 {
+  color: black;
+}
+
+.selector-60 {
+  color: black;
+}
+
+.selector-61 {
+  color: black;
+}
+
+.selector-62 {
+  color: black;
+}
+
+.selector-63 {
+  color: black;
+}
+
+.selector-64 {
+  color: black;
+}
+
+.selector-65 {
+  color: black;
+}
+
+.selector-66 {
+  color: black;
+}
+
+.selector-67 {
+  color: black;
+}
+
+.selector-68 {
+  color: black;
+}
+
+.selector-69 {
+  color: black;
+}
+
+.selector-70 {
+  color: black;
+}
+
+.selector-71 {
+  color: black;
+}
+
+.selector-72 {
+  color: black;
+}
+
+.selector-73 {
+  color: black;
+}
+
+.selector-74 {
+  color: black;
+}
+
+.selector-75 {
+  color: black;
+}
+
+.selector-76 {
+  color: black;
+}
+
+.selector-77 {
+  color: black;
+}
+
+.selector-78 {
+  color: black;
+}
+
+.selector-79 {
+  color: black;
+}
+
+.selector-80 {
+  color: black;
+}
+
+.selector-81 {
+  color: black;
+}
+
+.selector-82 {
+  color: black;
+}
+
+.selector-83 {
+  color: black;
+}
+
+.selector-84 {
+  color: black;
+}
+
+.selector-85 {
+  color: black;
+}
+
+.selector-86 {
+  color: black;
+}
+
+.selector-87 {
+  color: black;
+}
+
+.selector-88 {
+  color: black;
+}
+
+.selector-89 {
+  color: black;
+}
+
+.selector-90 {
+  color: black;
+}
+
+.selector-91 {
+  color: black;
+}
+
+.selector-92 {
+  color: black;
+}
+
+.selector-93 {
+  color: black;
+}
+
+.selector-94 {
+  color: black;
+}
+
+.selector-95 {
+  color: black;
+}
+
+.selector-96 {
+  color: black;
+}
+
+.selector-97 {
+  color: black;
+}
+
+.selector-98 {
+  color: black;
+}
+
+.selector-99 {
+  color: black;
+}
+
+.selector-100 {
+  color: black;
+}
+
+.circle-1 {
+  animation-name: animacion1;
+}
+@keyframes animacion1 {
+  100% {
+    transform: translate(50%);
+  }
+}
+
+.circle-2 {
+  animation-name: animacion2;
+}
+@keyframes animacion2 {
+  100% {
+    transform: translate(100%);
+  }
+}
+
+.circle-3 {
+  animation-name: animacion3;
+}
+@keyframes animacion3 {
+  100% {
+    transform: translate(150%);
+  }
+}
+
+.circle-4 {
+  animation-name: animacion4;
+}
+@keyframes animacion4 {
+  100% {
+    transform: translate(200%);
+  }
+}
+
+.circle-5 {
+  animation-name: animacion5;
+  animation-direction: alternate-reverse;
+}
+@keyframes animacion5 {
+  100% {
+    transform: translate(250%);
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
