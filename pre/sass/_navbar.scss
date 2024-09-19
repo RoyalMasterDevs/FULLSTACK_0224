@@ -1,0 +1,70 @@
+// PARTIALS. Siempre se antepone un guion bajo, sino se compila igual que el archivo principal
+@use 'variables';
+@use 'mixinsfunc';
+
+:root{
+    --primary: #{variables.$primary};
+}
+// .nav {
+//     background-color: red;
+// }
+
+// .nav ul{
+
+// }
+// .nav ul li{
+
+// }
+// .nav ul li a{
+
+// }
+// .nav {
+//     ul {
+//         color: black;
+
+//         li {
+//             color: white;
+//         }
+//     }
+// }
+//BEM en SASS
+.nav {
+    background-color: variables.$color;
+    
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+        height: 70px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include mixinsfunc.crear-flexbox(space-evenly);
+        gap: 1em;
+        // em es en base al elemento padre
+        // rem es en base al elemento html
+
+    }
+
+    &__item {
+        color: white;
+        text-decoration: none;
+
+        &--active {
+            text-decoration: underline;
+
+        }
+
+        &:hover {
+            color: black;
+
+        }
+
+    }
+
+    @media (min-width: 764px) {
+        &__container {
+            justify-content: flex-end;
+        }
+    }
+}
