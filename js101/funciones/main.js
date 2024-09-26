@@ -1,4 +1,4 @@
-function sumar() {
+/* function sumar() {
     console.log(2 + 2);
 }
 
@@ -17,4 +17,5 @@ const aprendiendo2 = () => {
 
 }
 
-console.log(aprendiendo())
+console.log(aprendiendo()) */
+
