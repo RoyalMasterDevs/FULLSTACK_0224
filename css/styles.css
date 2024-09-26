@@ -355,7 +355,3 @@ grid-auto-rows: 300px;
 }
      
 }
-/* BEM */
-#section1{
-    display: flex;
-}
