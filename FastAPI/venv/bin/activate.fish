@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/mnt/01D5F2A2ACF29360/Cursos/FullStack_0224/FastAPI/venv"
+set -gx VIRTUAL_ENV "/mnt/01D5F2A2ACF29360/Cursos/Login_FastAPI/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

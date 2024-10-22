@@ -18,4 +18,3 @@ def signup(req: Request):
 @app.get("user", response_class=HTMLResponse)
 def user(req: Request):
     return template.TemplateResponse("user.html", {"request": req})
-

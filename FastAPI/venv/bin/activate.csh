@@ -9,7 +9,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/mnt/01D5F2A2ACF29360/Cursos/FullStack_0224/FastAPI/venv"
+setenv VIRTUAL_ENV "/mnt/01D5F2A2ACF29360/Cursos/Login_FastAPI/venv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

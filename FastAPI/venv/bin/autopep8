@@ -1,4 +1,4 @@
-#!/mnt/01D5F2A2ACF29360/Cursos/FullStack_0224/FastAPI/venv/bin/python
+#!/mnt/01D5F2A2ACF29360/Cursos/Login_FastAPI/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
