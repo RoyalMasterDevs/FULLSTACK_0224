@@ -1,3 +1,7 @@
-/reproductor
+node_modules/
 
-css/styles.css
+.env
+
+venv/
+
+__pycache__

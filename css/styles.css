@@ -1,6 +1,357 @@
-body{
-    background-color: blue;
+/* PALETA DE COLORES */
+:root {
+    --ColorFondoGlobal: #d24f51;
+    --ColorLetras: #761c1c00;
+    --ColorLetrasRGB: rgb(194, 158, 158);
+    --ColorConTransparencias: rgba(157, 28, 28, 0.2);
 }
-h1{
+
+
+/* Propiedades de CSS */
+/* CASCADA */
+p {
+    color: var(--ColorLetras);
+
+}
+
+p {
+    color: green;
+}
+
+/* HERENCIA */
+div {
+    background-color: var(--ColorConTransparencias);
     color: white;
+}
+
+/* ESPECIFICIDAD */
+div>h1 {
+    background-color: aqua;
+    color: green;
+}
+
+/* !important */
+div>h1 {
+    background-color: red !important;
+}
+
+header {
+    margin: 20px 20px 20px 20px;
+    border: 20px solid black;
+    padding: 20px 20px 20px 20px;
+}
+
+ul {
+    /* FLEXBOX se usa desde el elemento padre hacia los elementos hijo */
+    /* FLEXBOX APLICA POR DEFAULT EL ORDEN HORIZONTAL */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+main p {
+    background-color: #0000ff;
+    color: black;
+    font-size: 10px;
+    border-radius: 7px;
+    width: 90%;
+    border: solid 2px black;
+}
+
+img {
+    width: 100%;
+}
+
+#principal {
+    margin: 0 2 0 0;
+    width: 95%;
+}
+
+.contenido {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido2 {
+    padding: 10px;
+}
+
+/* PROYECTO DE REPRODUCTOR */
+
+/* WEB RESPONSIVE, responsivos */
+/* MEDIA QUERIES */
+@media (min-width: 1200px) {
+    img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 960px) {
+    ul {
+        flex-direction: column;
+    }
+
+}
+
+/*  */
+/* ██████  ██       ██████  ██████   █████  ██      ███████ ███████  */
+/* ██       ██      ██    ██ ██   ██ ██   ██ ██      ██      ██       */
+/* ██   ███ ██      ██    ██ ██████  ███████ ██      █████   ███████  */
+/* ██    ██ ██      ██    ██ ██   ██ ██   ██ ██      ██           ██  */
+/* ██████  ███████  ██████  ██████  ██   ██ ███████ ███████ ███████  */
+/*  */
+
+/* 
+██   ██  █████  ███    ███ ██████  ██    ██ ██████   ██████  ██    ██ ███████ ███████  █████  
+██   ██ ██   ██ ████  ████ ██   ██ ██    ██ ██   ██ ██       ██    ██ ██      ██      ██   ██ 
+███████ ███████ ██ ████ ██ ██████  ██    ██ ██████  ██   ███ ██    ██ █████   ███████ ███████ 
+██   ██ ██   ██ ██  ██  ██ ██   ██ ██    ██ ██   ██ ██    ██ ██    ██ ██           ██ ██   ██ 
+██   ██ ██   ██ ██      ██ ██████   ██████  ██   ██  ██████   ██████  ███████ ███████ ██   ██ 
+                                                                                                                                                                 */
+#menu {
+    z-index: 2;
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.hamburger {
+    transition: 0.3 ease;
+    display: none;
+}
+
+.hamburger ul {
+    padding: 0 22px;
+    /* padding: 0 22px 0 22px; Esta forma de declarar es igual*/
+
+}
+
+.hamburger li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.hamburger li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.hamburger li a:hover {
+    font-weight: bold;
+    background-color: green;
+}
+
+.menu-bg,
+#menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #DC052D, #610919);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-61%, -13%);
+}
+
+@media (min-width: 960px) {
+    #menu {
+        display: none;
+    }
+
+}
+
+@media (max-width: 959px) {
+    .nav_menu {
+        display: none !important;
+    }
+
+}
+
+/*
+ ███████ ██      ███████ ██   ██ ██████   ██████  ██   ██ 
+██      ██      ██       ██ ██  ██   ██ ██    ██  ██ ██  
+█████   ██      █████     ███   ██████  ██    ██   ███   
+██      ██      ██       ██ ██  ██   ██ ██    ██  ██ ██  
+██      ███████ ███████ ██   ██ ██████   ██████  ██   ██ 
+                                                          */
+.tokyo {
+    text-align: center;
+    background-color: white;
+}
+
+.containerImg {
+    display: flex;
+    /* Por default aplica el valor row, horizontal */
+    flex-direction: column;
+    overflow-x: scroll;
+    padding: 24px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.tokyoItem {
+    position: relative;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.tokyoText {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+
+}
+
+@media (min-width: 1120px) {
+    .containerImg {
+        justify-content: center;
+    }
+}
+
+/* 
+██████  ██████  ██ ██████  
+██       ██   ██ ██ ██   ██ 
+██   ███ ██████  ██ ██   ██ 
+██    ██ ██   ██ ██ ██   ██ 
+ ██████  ██   ██ ██ ██████  
+                           */
+.containerGaleria {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.galeriaImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeriaItem {
+    position: relative;
+}
+
+.galeriaTitle {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.galeriaItem:nth-child(1){
+    grid-column-start: span 1;
+
+}
+.galeriaItem:nth-child(2){
+    grid-column-start: span 2;
+
+}
+.galeriaItem:nth-child(3){
+    grid-column-start: span 1;
+
+}
+.galeriaItem:nth-child(4){
+    grid-column-start: span 1;
+
+}
+.galeriaItem:nth-child(5){
+    grid-column-start: span 1;
+
+}
+.galeriaItem:nth-child(6){
+    grid-column-start: span 1;
+
+}
+@media (min-width: 468px) {
+    .containerGaleria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: 20px;
+    }
+.galeriaItem:nth-child(1){
+    grid-column-start: span 1;
+
+}
+.galeriaItem:nth-child(2){
+    grid-column-start: span 2;
+
+}
+.galeriaItem:nth-child(3){
+    grid-column-start: span 1;
+
+}
+.galeriaItem:nth-child(4){
+    grid-column-start: span 2;
+
+}
+.galeriaItem:nth-child(5){
+    grid-column-start: span 1;
+
+}
+.galeriaItem:nth-child(6){
+    grid-column-start: span 2;
+
+}
+     
 }
